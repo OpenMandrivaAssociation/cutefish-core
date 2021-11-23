@@ -1,3 +1,5 @@
+%define oname core
+
 Name:           cutefish-core
 Version:        0.5
 Release:        1
