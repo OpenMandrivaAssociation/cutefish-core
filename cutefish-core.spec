@@ -54,7 +54,7 @@ Cutefish WorkSpace - System backend and start session and more.
 
 
 %prep
-%autosetup -n %{oname}-%{versopn} -p1
+%autosetup -n %{oname}-%{version} -p1
 #ed -i 's/\(QHotkey \)QHotkey/\1qhotkey/' hotkeys/CMakeLists.txt
 sed -i 's/^\(Type=\).*$/\1XSession/' session/cutefish-xsession.desktop
 
