@@ -87,7 +87,7 @@ ln -s %{_sysconfdir}/alternatives/default-xsession.desktop %{buildroot}%{_datadi
 %license LICENSE
 %doc README.md
 %dir %{_sysconfdir}/xdg/cutefishos
-%config(noreplace) %{_sysconfdir}/xdg/cutefishos/theme.conf
+#config(noreplace) #{_sysconfdir}/xdg/cutefishos/theme.conf
 %config %{_sysconfdir}/cutefish
 %{_bindir}/chotkeys
 %{_bindir}/cupdatecursor
@@ -102,7 +102,7 @@ ln -s %{_sysconfdir}/alternatives/default-xsession.desktop %{buildroot}%{_datadi
 %{_bindir}/cutefish-shutdown
 %{_bindir}/cutefish-xembedsniproxy
 %{_sysconfdir}/xdg/autostart/cutefish-polkit-agent.desktop
-%{_sysconfdir}/xdg/autostart/cutefish-settings-daemon.desktop
+#_sysconfdir}/xdg/autostart/cutefish-settings-daemon.desktop
 %{_datadir}/polkit-1/actions/com.cutefish.brightness.pkexec.policy
 %ghost %{_sysconfdir}/alternatives/default-xsession.desktop
 %dir %{_datadir}/polkit-1
