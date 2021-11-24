@@ -46,7 +46,7 @@ BuildRequires:  pkgconfig(xtst)
 Requires:       cutefish-kwin-plugins
 Requires:       cutefish-qt-plugins
 Requires:       fishui
-Requires:       kwin5
+Requires:       kwin
 Recommends:     kscreen5
 Recommends:     cutefish-wallpapers
 
