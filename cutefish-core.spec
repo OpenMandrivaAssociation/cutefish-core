@@ -1,7 +1,7 @@
 %define oname core
 
 Name:           cutefish-core
-Version:        0.5
+Version:        0.7
 Release:        1
 Summary:        System backend and start session for Cutefish
 License:        GPL-3.0-or-later
@@ -97,6 +97,7 @@ ln -s %{_sysconfdir}/alternatives/default-xsession.desktop %{buildroot}%{_datadi
 %{_bindir}/cutefish-polkit-agent
 %{_bindir}/cutefish-powerman
 %{_bindir}/cutefish-screen-brightness
+%{_bindir}/cutefish-sddm-helper
 %{_bindir}/cutefish-session
 %{_bindir}/cutefish-settings-daemon
 %{_bindir}/cutefish-shutdown
@@ -108,6 +109,7 @@ ln -s %{_sysconfdir}/alternatives/default-xsession.desktop %{buildroot}%{_datadi
 %dir %{_datadir}/polkit-1
 %dir %{_datadir}/polkit-1/actions
 %{_datadir}/polkit-1/actions/com.cutefish.cpufreq.pkexec.policy
+%{_datadir}/polkit-1/actions/com.cutefish.sddm.helper.pkexec.policy
 %{_datadir}/xsessions/default.desktop
 %{_datadir}/xsessions/cutefish-xsession.desktop
 %{_userunitdir}/cutefish-gmenuproxy.service
