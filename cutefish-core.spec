@@ -2,7 +2,7 @@
 
 Name:           cutefish-core
 Version:        0.7
-Release:        1
+Release:        2
 Summary:        System backend and start session for Cutefish
 License:        GPL-3.0-or-later
 Group:          System/X11/Other
@@ -49,12 +49,29 @@ BuildRequires:  pkgconfig(xorg-server)
 BuildRequires:  pkgconfig(xorg-synaptics)
 BuildRequires:  pkgconfig(xtst)
 
-Requires:       cutefish-kwin-plugins
-Requires:       cutefish-qt-plugins
-Requires:       fishui
-Requires:       kwin
-Recommends:     kscreen5
-Recommends:     cutefish-wallpapers
+# To pull full stack
+Provides: task-cutefish
+
+Requires: fishui
+Requires: cutefish
+Requires: cutefish-qt-plugins
+Requires: cutefish-kwin-plugins
+Requires: cutefish-filemanager
+Requires: cutefish-wallpapers
+Requires: cutefish-videoplayer
+Requires: cutefish-terminal
+Requires: cutefish-statusbar
+Requires: cutefish-settings
+Requires: cutefish-screenshot
+Requires: cutefish-screenlocker
+Requires: cutefish-launcher
+Requires: cutefish-icon-theme
+Requires: cutefish-dock
+Requires: cutefish-cursor-themes
+Requires: cutefish-calculator
+
+Requires: kwin
+Requires: kscreen5
 
 %description
 Cutefish WorkSpace - System backend and start session and more.
