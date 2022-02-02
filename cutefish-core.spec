@@ -1,8 +1,8 @@
 %define oname core
 
 Name:           cutefish-core
-Version:        0.7
-Release:        2
+Version:        0.8
+Release:        1
 Summary:        System backend and start session for Cutefish
 License:        GPL-3.0-or-later
 Group:          System/X11/Other
@@ -114,6 +114,7 @@ ln -s %{_sysconfdir}/alternatives/default-xsession.desktop %{buildroot}%{_datadi
 %config %{_sysconfdir}/cutefish
 %{_bindir}/chotkeys
 %{_bindir}/cupdatecursor
+%{_bindir}/cutefish-clipboard
 %{_bindir}/cutefish-cpufreq
 %{_bindir}/cutefish-gmenuproxy
 %{_bindir}/cutefish-notificationd
