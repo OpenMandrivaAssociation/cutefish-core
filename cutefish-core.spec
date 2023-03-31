@@ -2,7 +2,7 @@
 
 Name:           cutefish-core
 Version:        0.8
-Release:        1
+Release:        2
 Summary:        System backend and start session for Cutefish
 License:        GPL-3.0-or-later
 Group:          System/X11/Other
